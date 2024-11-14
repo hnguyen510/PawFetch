@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="checkout.css" />
+    <link rel="stylesheet" type="text/css" href="../nav/nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>PawFetch - Checkout</title>
+  </head>
+  <body>
+    <div class="checkout">
+      <div class="checkout_leftSide">
+        <div class="nav_logo_container">
+          <div class="nav_logo">
+            <img src="../public/PawFetchLogo.png" height="75" />
+          </div>
+        </div>
+
+        <div class="express_checkout">
+          <p>Express Checkout</p>
+          <div class="express_checkout_buttons">
+            <div class="checkout_button checkout_button-paypal">PayPal</div>
+            <div class="checkout_button checkout_button-venmo">Venmo</div>
+          </div>
+          <p>OR</p>
+        </div>
+        <div class="checkout_contact">
+          <h2>Contact</h2>
+          <div class="input_row">
+            <input type="text" placeholder="Email" name="name" required />
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe" /> Email
+            me with news and offers
+          </label>
+        </div>
+
+        <div class="checkout_delivery">
+          <h2>Delivery</h2>
+          <div>
+            <div class="input_row">
+              <input
+                type="text"
+                placeholder="Country/Region"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="input_row">
+              <input
+                type="text"
+                placeholder="First Name"
+                name="name"
+                required
+              />
+              <input type="text" placeholder="Last Name" name="name" required />
+            </div>
+            <div class="input_row">
+              <input type="text" placeholder="Address" name="name" required />
+            </div>
+            <div class="input_row">
+              <input type="text" placeholder="City" name="name" required />
+
+              <input type="text" placeholder="State" name="name" required />
+
+              <input type="text" placeholder="Zip Code" name="name" required />
+            </div>
+            <div class="input_row">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                name="name"
+                required
+              />
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="save_address" />
+              Save this information for next time
+            </label>
+          </div>
+
+          <div class="shipping_method">
+            <h3>Shipping Method</h3>
+            <form>
+              <div class="radio_button_box radio_button_box-top">
+                <input
+                  type="radio"
+                  id="choice1"
+                  name="shipping"
+                  value="ground"
+                />
+                <label for="choice1">FedEx Ground S</label>
+              </div>
+              <div class="radio_button_box radio_button_box-bottom">
+                <input
+                  type="radio"
+                  id="choice2"
+                  name="shipping"
+                  value="2ndday"
+                />
+                <label for="choice2">FedEx 2ND DAY</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="checkout_payment">
+          <h2>Payment</h2>
+          <p>All transactions are secure and encrypted.</p>
+          <div class="checkout_billing">
+            <h3>Billing address</h3>
+            <form>
+              <div class="radio_button_box radio_button_box-top">
+                <input type="radio" id="choice1" name="billing" value="same" />
+                <label for="choice1">Same as shipping address</label>
+              </div>
+              <div class="radio_button_box radio_button_box-bottom">
+                <input
+                  type="radio"
+                  id="choice2"
+                  name="billing"
+                  value="different"
+                />
+                <label for="choice2">Use a different billing address</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="checkout_pay_button">
+          <div class="checkout_button checkout_button-general">
+            Click to Pay
+          </div>
+        </div>
+      </div>
+      <div class="checkout_rightSide">
+        <!-- items sections-->
+        <div class="checkout_details">
+          <div class="checkout_items">
+            <div class="checkout_img"></div>
+            <div class="checkout_item">
+              <div class="checkout_detail_title">
+                <p class="p_item-name">Hat</p>
+                <p class="p_item-description">Grey With Navy Hearts</p>
+              </div>
+            </div>
+          </div>
+          <div class="checkout_item_value">
+            <div class="checkout_detail_value right-margin-small">$5.00</div>
+            <div class="checkout_detail_title">x 1</div>
+          </div>
+        </div>
+        <div class="checkout_details">
+          <div class="checkout_items">
+            <div class="checkout_img"></div>
+            <div class="checkout_detail_title">
+              <p class="p_item-name">Heart T-shirt</p>
+              <p class="p_item-description">Black With Red Hearts</p>
+            </div>
+          </div>
+          <div class="checkout_item_value">
+            <div class="checkout_detail_value right-margin-small">$18.00</div>
+            <div class="checkout_detail_title">x 1</div>
+          </div>
+        </div>
+        <!-- cost sections -->
+        <div class="checkout_details">
+          <div class="checkout_detail_title">Subtotal * 2 items</div>
+          <div class="checkout_detail_value">$23.00</div>
+        </div>
+        <div class="checkout_details">
+          <div class="checkout_detail_title">Shipping</div>
+          <div class="checkout_detail_value">$8.50</div>
+        </div>
+        <div class="checkout_details">
+          <div class="checkout_detail_title">Estimated taxes</div>
+          <div class="checkout_detail_value">$1.90</div>
+        </div>
+        <div class="checkout_details checkout_total">
+          <div class="checkout_detail_title">Total</div>
+          <div class="checkout_detail_value">$33.90</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

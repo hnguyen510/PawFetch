@@ -1,0 +1,46 @@
+/* this is a container */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* this is a container */
+.nav_leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 3;
+}
+
+/* this is a container */
+.nav_logo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_logo {
+  margin: 20px;
+}
+
+/* this is a container */
+.nav_productCategories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 3;
+  width: 275px;
+}
+
+.nav_category {
+}
+
+/* this is a container */
+.nav_rigthSide {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.nav_cart {
+  align-items: center;
+}
